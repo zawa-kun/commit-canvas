@@ -16,9 +16,3 @@ def get_contributions(username):
         data.append((date, level))
 
     return data
-
-debug = 1 # debug用
-if debug:
-    contribs = get_contributions('zawa-kun') # ユーザーネームを入力
-    for date, level in contribs[-7:]:  # 直近1週間だけ表示
-        print(f"{date}: {level} level")
